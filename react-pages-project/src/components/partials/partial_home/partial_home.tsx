@@ -14,9 +14,9 @@ function page_one() {
         </h3>
 
         <nav className={style.partial_home_nav}>
-          <Link className={style.partial_home_link} to="/">Home</Link>
           <Link className={style.partial_home_link} to="/one">One</Link>
           <Link className={style.partial_home_link} to="/two">Two</Link>
+          <Link className={style.partial_home_link} to="/test_page">Test Page</Link>
         </nav>
       </main>
     </>
