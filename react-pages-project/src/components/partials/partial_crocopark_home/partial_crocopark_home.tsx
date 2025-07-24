@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import style from './partial_crocopark_home.module.css'
 
 function partial_crocopark_home() {
