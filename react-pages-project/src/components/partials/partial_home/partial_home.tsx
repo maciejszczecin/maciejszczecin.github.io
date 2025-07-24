@@ -1,26 +1,24 @@
 import { Link } from 'react-router-dom';
 import style from './partial_home.module.css'
 
-function page_one() {
+function partial_home() {
   return (
     <>
-      <main className={style.partial_home_main}>
-        <header>
-          <h2>Home Page | Welcome</h2>
-        </header>
-
-        <h3>
+      <title>Home Page</title>
+      
+      <main className={style.main}>
+        <h1 style={{ marginTop: 0 }}>Welcome to the Home Page</h1>
+        <menu>
           Pages Available:
-        </h3>
-
-        <nav className={style.partial_home_nav}>
-          <Link className={style.partial_home_link} to="/one">One</Link>
-          <Link className={style.partial_home_link} to="/two">Two</Link>
-          <Link className={style.partial_home_link} to="/test_page">Test Page</Link>
-        </nav>
+          <ul>
+            <li><Link className={style.link} to="helloworld">Hello World</Link></li>
+            <li><Link className={style.link} to="crocopark">CrocoPark</Link></li>
+            <li><Link className={style.link} to="page_testing">Test Page</Link></li>
+          </ul>
+        </menu>
       </main>
     </>
   )
 }
 
-export default page_one;
+export default partial_home;
