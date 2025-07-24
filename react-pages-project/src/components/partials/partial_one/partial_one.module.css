@@ -1,0 +1,15 @@
+.partial_one_main
+{
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partial_one_h1
+{
+    letter-spacing: 5px;
+    text-decoration: underline;
+}

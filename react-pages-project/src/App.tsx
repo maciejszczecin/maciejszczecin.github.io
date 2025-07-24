@@ -1,34 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import './App.css'
+import PageLayout from './components/pages/pages_layout/pages_layout'
+import PartialHome from './components/partials/partial_home/partial_home'
+import PartialOne from './components/partials/partial_one/partial_one'
+import PartialTwo from './components/partials/partial_two/partial_two'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PageLayout />}>
+          <Route index element={<PartialHome />} />
+          <Route path="one" element={<PartialOne />} />
+          <Route path="two" element={<PartialTwo />} />
+          <Route path="*" element={<PartialHome />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

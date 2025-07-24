@@ -1,0 +1,22 @@
+.partial_home_main
+{
+    background-color: #242424;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.partial_home_nav
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.partial_home_link
+{
+  color: white;
+  text-align: center;
+}
