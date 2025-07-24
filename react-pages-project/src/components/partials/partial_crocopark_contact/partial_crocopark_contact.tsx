@@ -21,9 +21,9 @@ function partial_crocopark_contact() {
                 </Link>
               </h1>
               <menu className={style.crocopark_menu}>
-                <Link to="" className={style.menu_link}>Attractions & Species</Link>
-                <Link to="" className={style.menu_link}>Tickets</Link>
-                <Link to="" className={style.menu_link}>Contact Information</Link>
+                <Link to="/crocopark/attractions_and_species" className={style.menu_link}>Attractions & Species</Link>
+                <Link to="/crocopark/tickets" className={style.menu_link}>Tickets</Link>
+                <Link to="/crocopark/contact" className={style.menu_link}>Contact Information</Link>
               </menu>
             </section>
           </section>

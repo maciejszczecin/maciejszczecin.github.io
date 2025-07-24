@@ -14,16 +14,16 @@ function partial_crocopark_home() {
             <img src="./../logo_256x256.png" alt="logo_256x256.png" className={style.logo_style}/>
             <section className={style.right_header_section}>
               <h1>
-                <Link to="/crocopark" className={style.park_name}>
+                <Link to="/crocopark/home" className={style.park_name}>
                   <span className={style.name_part1}>CrocoPark</span>
                   &nbsp;
                   <span className={style.name_part2}>Agadir Marocco</span>
                 </Link>
               </h1>
               <menu className={style.crocopark_menu}>
-                <Link to="" className={style.menu_link}>Attractions & Species</Link>
-                <Link to="" className={style.menu_link}>Tickets</Link>
-                <Link to="" className={style.menu_link}>Contact Information</Link>
+                <Link to="/crocopark/attractions_and_species" className={style.menu_link}>Attractions & Species</Link>
+                <Link to="/crocopark/tickets" className={style.menu_link}>Tickets</Link>
+                <Link to="/crocopark/contact" className={style.menu_link}>Contact Information</Link>
               </menu>
             </section>
           </section>
