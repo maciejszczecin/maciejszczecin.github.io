@@ -1,4 +1,4 @@
-import style from './page_testing.module.css'
+// import style from './page_testing.module.css'
 
 const page_testing = () => {
   return (
