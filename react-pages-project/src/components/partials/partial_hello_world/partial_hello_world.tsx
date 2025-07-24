@@ -3,7 +3,7 @@ import style from './partial_hello_world.module.css'
 function partial_hello_world() {
   return (
     <>
-      <title>Day One Site</title>
+      <title>Hello World</title>
       
         <main className={style.main}>
           <h1 className={style.h1}>
